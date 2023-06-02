@@ -1,1 +1,6 @@
 <p>img works!</p>
+<img width="200" [src]="img" *ngIf="img; else imageNotFoundTemplate">
+
+<ng-template #imageNotFoundTemplate>
+  <img src="./../../../assets/images/default.png" alt="image not found">
+</ng-template>
