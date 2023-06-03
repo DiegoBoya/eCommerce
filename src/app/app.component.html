@@ -4,3 +4,6 @@
       (loaded)="onLoadImage($event)"
       >
 </app-img>
+
+<app-product *ngFor="let prod of products" [product]="prod"></app-product>
+
