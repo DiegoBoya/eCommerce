@@ -7,6 +7,7 @@ import { ImgComponent } from './components/img/img.component';
 import { FormsModule } from '@angular/forms';
 import { ProductComponent } from './components/product/product.component';
 import { CatalogueComponent } from './components/catalogue/catalogue.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { CatalogueComponent } from './components/catalogue/catalogue.component';
     ImgComponent,
     ProductComponent,
     CatalogueComponent,
+    HeaderComponent,
 
   ],
   imports: [
