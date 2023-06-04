@@ -3,7 +3,7 @@
      (error)="printDefault()"
      (load)="imageLoadedOk()"
      [src]="img" *ngIf="img; else imageNotFoundTemplate">
-
+<h3> {{ counter }}</h3>
 <ng-template #imageNotFoundTemplate>
   <img [src]="imgDefault" alt="image not found" width="200">
 </ng-template>

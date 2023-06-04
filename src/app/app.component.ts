@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'eComerce';
   foto = 'https://www.w3schools.com/howto/img_avatar.png';
   COMPONENT = 'appRoot - ';
+  state: boolean = true;
 
   products : Product[] = [
     {
@@ -54,5 +55,8 @@ export class AppComponent {
     console.log(this.COMPONENT, 'imagen llega al padre', img)
   }
 
+  changeState(){
+    this.state = !this.state;
+  }
 
 }
