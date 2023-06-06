@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  showSideMenu = false;
+
+  toggleSideMenu(){
+    this.showSideMenu = !this.showSideMenu;
+  }
+
 }

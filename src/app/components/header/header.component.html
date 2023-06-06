@@ -1,6 +1,6 @@
 <div class="show-mobile">
   <div>
-    <button>
+    <button (click)="toggleSideMenu()">
       <img src="./assets/svg/icon_menu.svg" alt="menu">
     </button>
     <a href="">
@@ -11,7 +11,15 @@
     </a>
   </div>
 </div>
-<div class="hide-mobile">
+<div class="side-menu" [ngClass]="{isActive:showSideMenu}">
+  <button (click)="toggleSideMenu()">Close</button>
+  <ul>
+    <li><a href="">All</a></li>
+    <li><a href="">Clothes</a></li>
+    <li><a href="">Electronics</a></li>
+  </ul>
+</div>
+<div class="hide-mobile" >
   <div>
     <nav>
       <a class="logo" href="">
