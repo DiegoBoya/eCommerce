@@ -8,6 +8,8 @@ import { Product } from 'src/app/models/product.model';
 })
 export class CatalogueComponent {
 
+  shopingCart: Product[] = [];
+  totalPrice: number = 0;
   products : Product[] = [
     {
       id: '1',
@@ -47,4 +49,13 @@ export class CatalogueComponent {
     },
   ];
 
+  ngOnInit():void{
+
+  }
+
+  onAddToShoppingCart(product: Product){
+    console.log(`se agrega al carrito el`,product)
+    this.shopingCart.push(product);
+    this.totalPrice = this.shopingCart.reduce((sum, item) => sum + item.price, 0);
+  }
 }

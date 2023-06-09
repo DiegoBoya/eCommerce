@@ -1,7 +1,10 @@
+<p>Total productos en carrito: {{shopingCart.length}}</p>
+<p>Precio: ${{totalPrice}}</p>
 <div class="products--grid">
   <app-product
-      *ngFor="let prod of products"
       [product]="prod"
+      *ngFor="let prod of products"
+      (addProductEmitter)="onAddToShoppingCart($event)"
       >
   </app-product>
 </div>
