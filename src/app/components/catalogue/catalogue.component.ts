@@ -20,7 +20,7 @@ export class CatalogueComponent {
   shoppingCart: Product[];
   totalPrice:number = 0;
   date = new Date();
-  name = 'my eCommerce'
+  name = 'my eCommerce';
 
   ngOnInit():void{
     this.productService.getAllProducts().subscribe(data => this.products = data);

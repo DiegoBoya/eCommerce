@@ -9,6 +9,7 @@ import { ProductComponent } from './components/product/product.component';
 import { CatalogueComponent } from './components/catalogue/catalogue.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ReversePipe } from './pipes/reverse.pipe';
+import { TimeAgoPipe } from './pipes/time-ago.pipe';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { ReversePipe } from './pipes/reverse.pipe';
     CatalogueComponent,
     HeaderComponent,
     ReversePipe,
+    TimeAgoPipe,
 
   ],
   imports: [
