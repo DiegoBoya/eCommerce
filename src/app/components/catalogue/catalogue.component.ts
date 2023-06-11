@@ -19,6 +19,7 @@ export class CatalogueComponent {
   products : Product[] = [];
   shoppingCart: Product[];
   totalPrice:number = 0;
+  date = new Date();
 
   ngOnInit():void{
     this.productService.getAllProducts().subscribe(data => this.products = data);
