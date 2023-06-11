@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { ProductComponent } from './components/product/product.component';
 import { CatalogueComponent } from './components/catalogue/catalogue.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ReversePipe } from './pipes/reverse.pipe';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { HeaderComponent } from './components/header/header.component';
     ProductComponent,
     CatalogueComponent,
     HeaderComponent,
+    ReversePipe,
 
   ],
   imports: [
