@@ -10,6 +10,7 @@ import { CatalogueComponent } from './components/catalogue/catalogue.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ReversePipe } from './pipes/reverse.pipe';
 import { TimeAgoPipe } from './pipes/time-ago.pipe';
+import { HighlightsDirective } from './directives/highlights.directive';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { TimeAgoPipe } from './pipes/time-ago.pipe';
     HeaderComponent,
     ReversePipe,
     TimeAgoPipe,
+    HighlightsDirective,
 
   ],
   imports: [
